@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 6em;
+            margin: 0;
+            color: #ff6f61;
+        }
+        p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: #fff;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .back-button:hover {
+            background-color: #e55b50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <a href="/" class="back-button">Go to Homepage</a>
+    </div>
+    <script>
+        // Optional: Add some interactivity, like a random quote or a fun animation
+        // This script adds a random quote for a bit of fun.
+        const quotes = [
+            "It seems you’ve hit a roadblock!",
+            "Looks like this page took a vacation.",
+            "Sorry, we couldn't find that page.",
+            "Error 404: The page was not found."
+        ];
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        document.querySelector('p').textContent = randomQuote;
+    </script>
+</body>
+</html>
